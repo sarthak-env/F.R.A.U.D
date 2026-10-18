@@ -216,3 +216,19 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+
+
+# Data and model files (large, regenerable, never commit)
+data/raw/*
+data/processed/*
+models/*
+
+# ...but keep the empty folders in the repo
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!models/.gitkeep
+
+# Local app database
+*.db
+*.sqlite3
